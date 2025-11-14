@@ -16,15 +16,13 @@ namespace NepaliInvestmentAdvisor
             // double income = 50000;
             // double expenses = 35000;
             // string riskTolerance = "medium";
-            // string goal = "long-term growth";
-            string prompt = "Giv me 4 ideas for Final Year Projects";
+            // string goal = "long-term growth"
+            string prompt = "Giv" +
+                            " m" +
+                            "e 4 ideas for Final Year Projects";
             Console.Write("Hello");
             var response = await client.GenerateContentAsync(prompt);
             Console.WriteLine(response.Text);
-            
-            
-            
-            
             Console.ReadLine();
         }
     }
