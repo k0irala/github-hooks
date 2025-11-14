@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Threading.Tasks;
 using GenerativeAI;
 
@@ -6,24 +7,61 @@ namespace NepaliInvestmentAdvisor
 {
     class Program
     {
+        // Simulated in-memory cache for pre-generated advice
+        private static readonly ConcurrentDictionary<string, string> AdviceCache = new ConcurrentDictionary<string, string>();
+
         static async Task Main(string[] args)
         {
             string apiKey = "AIzaSyA3_UeAEtKc5GlIV0fHeWrIITmI6sGiJIE";
+            var client = new GenerativeModel(apiKey, "gemini-2.5-flash-lite");
 
-            var client = new GenerativeModel(apiKey, "gemini-2.5-pro");
+            // Example user prompts (financial scenarios)
+            string[] userPrompts =
+            {
+                "How to get rich in a day without doing anything"
+            };
 
-            // Example user data
-            // double income = 50000;
-            // double expenses = 35000;
-            // string riskTolerance = "medium";
-            // string goal = "long-term growth"
-            string prompt = "Giv" +
-                            " m" +
-                            "e 4 ideas for Final Year Projects";
-            Console.Write("Hello");
-            var response = await client.GenerateContentAsync(prompt);
-            Console.WriteLine(response.Text);
+            foreach (var prompt in userPrompts)
+            {
+                Console.WriteLine($"\nUser Prompt: {prompt}");
+
+                if (AdviceCache.TryGetValue(prompt, out var cachedAdvice))
+                {
+                    // Instant response from cache
+                    Console.WriteLine("AI Response (cached):");
+                    Console.WriteLine(cachedAdvice);
+                }
+                else
+                {
+                    // Start background AI call
+                    Console.WriteLine("AI Response: Processing...");
+
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            // Limit tokens for faster response
+                            var response = await client.GenerateContentAsync(prompt);
+                            var text = response.Text.Trim();
+
+                            // Save to cache for future requests
+                            AdviceCache[prompt] = text;
+
+                            // Simulate notifying UI / console when done
+                            Console.WriteLine($"\nAI Response (generated):\n{text}\n");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Error generating AI response: {ex.Message}");
+                        }
+                    });
+                }
+            }
+
+            Console.WriteLine("\nPress Enter to exit...");
             Console.ReadLine();
         }
     }
+    
 }
+    
