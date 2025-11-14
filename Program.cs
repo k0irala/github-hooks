@@ -10,7 +10,7 @@ namespace NepaliInvestmentAdvisor
         {
             string apiKey = "AIzaSyA3_UeAEtKc5GlIV0fHeWrIITmI6sGiJIE";
 
-            var client = new GenerativeModel(apiKey ,"gemini-2.5-pro");
+            var client = new GenerativeModel(apiKey, "gemini-2.5-pro");
 
             // Example user data
             // double income = 50000;
