@@ -8,9 +8,9 @@ echo "🔧 Building solution..."
 dotnet build --no-restore --configuration Release
 
 if [ $? -ne 0 ]; then
-    echo "❌ Build failed. Push blocked."
-    echo "👉 Fix build errors before pushing."
-    exit 1
+  echo "❌ Build failed. Push blocked."
+  echo "👉 Fix build errors before pushing."
+  exit 1
 fi
 
 echo "✔ Build successful. Push allowed."
