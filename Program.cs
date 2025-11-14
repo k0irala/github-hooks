@@ -21,6 +21,8 @@ namespace NepaliInvestmentAdvisor
             Console.Write("Hello");
             var response = await client.GenerateContentAsync(prompt);
             Console.WriteLine(response.Text);
+            
+            
         }
     }
 }
