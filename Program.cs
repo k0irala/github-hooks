@@ -23,6 +23,9 @@ namespace NepaliInvestmentAdvisor
             Console.WriteLine(response.Text);
             
             
+            
+            
+            Console.ReadLine();
         }
     }
 }
