@@ -20,6 +20,8 @@ out/
 *.log
 *.vs/
 .vscode/
+*.cache
+*.pdb
 
 # Rider caches
 .idea/.idea.*
@@ -56,4 +58,4 @@ Thumbs.db
 *.xml
 *.json
 *.cache
-*.AssemblyInfo.*
+*.AssemblyInfo
