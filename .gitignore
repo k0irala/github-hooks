@@ -1,0 +1,58 @@
+
+# Rider IDE files
+.idea/
+*.sln.iml
+*.iws
+*.ipr
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output directories
+bin/
+obj/
+out/
+
+# .NET temporary files
+*.log
+.vs/
+.vscode/
+
+# Rider caches
+.idea/.idea.*
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/assetWizard/
+.idea/runConfigurations/
+.idea/dataSources/
+.idea/inspectionProfiles/
+.idea/.idea_localhistory/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Generated files to ignore
+*.dll
+*.pdb
+*.xml
+*.json
+*.cache
