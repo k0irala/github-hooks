@@ -12,23 +12,15 @@ namespace NepaliInvestmentAdvisor
 
         static async Task Main(string[] args)
         {
-<<<<<<< Updated upstream
             string apiKey = "AIzaSyA3_UeAEtKc5GlIV0fHeWrIITmI6sGiJIE";
-=======
-            string apiKey = "YOUR_API_KEY_HERE";
->>>>>>> Stashed changes
+
             var client = new GenerativeModel(apiKey, "gemini-2.5-flash-lite");
 
             // Example user prompts (financial scenarios)
             string[] userPrompts =
             {
-<<<<<<< Updated upstream
                 "How to get rich in a day without doing anything"
-=======
-                "Medium risk, long-term growth investment advice",
-                "High risk, short-term investment advice",
-                "Safe investment for retirement"
->>>>>>> Stashed changes
+
             };
 
             foreach (var prompt in userPrompts)
@@ -72,10 +64,5 @@ namespace NepaliInvestmentAdvisor
             Console.ReadLine();
         }
     }
-<<<<<<< Updated upstream
-    
+
 }
-    
-=======
-}
->>>>>>> Stashed changes
