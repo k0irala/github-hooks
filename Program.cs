@@ -42,7 +42,7 @@ namespace NepaliInvestmentAdvisor
                     {
                         try
                         {
-                            
+
                             var response = await client.GenerateContentAsync(prompt);
                             var text = response.Text.Trim();
 
