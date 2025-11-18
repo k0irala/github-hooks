@@ -7,7 +7,7 @@ echo "🚀 Running pre-push checks..."
 echo "🔧 Building solution..."
 dotnet build --no-restore --configuration Release
 
-if [ "$(git rev-parse --abbrev-ref HEAD)" == 'master' ]; then
+if [ "$(git rev-parse --abbrev-ref HEAD)" = 'master' ]; then
   echo "Cannot push into master branch"
   exit 1
 fi
