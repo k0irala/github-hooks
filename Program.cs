@@ -42,7 +42,7 @@ namespace NepaliInvestmentAdvisor
                     {
                         try
                         {
-                            // Limit tokens for faster response
+                            
                             var response = await client.GenerateContentAsync(prompt);
                             var text = response.Text.Trim();
 
