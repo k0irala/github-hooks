@@ -1,4 +1,3 @@
-
 # Rider IDE files
 .idea/
 *.sln.iml
@@ -18,6 +17,7 @@ out/
 
 # .NET temporary files
 *.log
+*.vs/
 .vs/
 .vscode/
 
@@ -37,7 +37,6 @@ out/
 .idea/inspectionProfiles/
 .idea/.idea_localhistory/
 
-# ReSharper
 _ReSharper*/
 *.DotSettings.user
 
