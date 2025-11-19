@@ -61,7 +61,7 @@ namespace NepaliInvestmentAdvisor
                     });
                 }
             }
-            Console.WriteLine("\nPress Enter to exit...");
+            Console.WriteLine("\nPress Enter to .");
             Console.WriteLine(DateTime.Now.Second);
             Console.ReadLine();
         }
