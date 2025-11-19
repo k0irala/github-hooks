@@ -12,6 +12,7 @@ namespace NepaliInvestmentAdvisor
 
         static async Task Main(string[] args)
         {
+
             string apiKey = "AIzaSyA3_UeAEtKc5GlIV0fHeWrIITmI6sGiJIE";
 
             var client = new GenerativeModel(apiKey, "gemini-2.5-flash-lite");
@@ -19,12 +20,13 @@ namespace NepaliInvestmentAdvisor
             // Example user prompts (financial scenarios)
             string[] userPrompts =
             {
-                "How to get rich in a day without doing anything"
+                "How can i watch NPL season 2 live for free in Nepal?"
 
             };
 
             foreach (var prompt in userPrompts)
             {
+                Console.WriteLine(DateTime.Now.Second);
                 Console.WriteLine($"\nUser Prompt: {prompt}");
 
                 if (AdviceCache.TryGetValue(prompt, out var cachedAdvice))
@@ -59,8 +61,8 @@ namespace NepaliInvestmentAdvisor
                     });
                 }
             }
-
             Console.WriteLine("\nPress Enter to exit...");
+            Console.WriteLine(DateTime.Now.Second);
             Console.ReadLine();
         }
     }
