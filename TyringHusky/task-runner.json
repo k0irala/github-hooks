@@ -14,13 +14,13 @@
       "name": "backend-restore",
       "group": "pre-push",
       "command": "dotnet",
-       "args": ["restore", "./TyringHusky/TyringHusky.csproj"]
+       "args": ["restore", "TyringHusky/TyringHusky.csproj"]
     },
     {
       "name": "backend-build",
       "group": "pre-push",
       "command": "dotnet",
-      "args": ["build", "./TyringHusky/TyringHusky.csproj", "--no-restore", "-c", "Release"]
+      "args": ["build", "TyringHusky/TyringHusky.csproj", "--no-restore", "-c", "Release"]
     }
   ]
 }
