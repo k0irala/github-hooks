@@ -15,21 +15,21 @@
       "group": "pre-push",
       "command": "dotnet",
       "args": ["restore"],
-      "cwd": "./TryingHusky"
+      "cwd": "./TryingHusky/TryingHusky"
     },
     {
       "name": "backend-build",
       "group": "pre-push",
       "command": "dotnet",
       "args": ["build", "--no-restore"],
-      "cwd": "./TryingHusky"
+      "cwd": "./TryingHusky/TryingHusky"
     },
     {
       "name": "backend-test",
       "group": "pre-push",
       "command": "dotnet",
       "args": ["test", "--no-build"],
-      "cwd": "./TryingHusky"
+      "cwd": "./TryingHusky/TryingHusky"
     }
   ]
 }
