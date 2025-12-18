@@ -20,4 +20,5 @@
 #echo 'Husky.Net is awesome!'
 
 dotnet husky run
-echo 'Husky.NET is good'
+#!/usr/bin/env sh
+dotnet husky run --group pre-push
