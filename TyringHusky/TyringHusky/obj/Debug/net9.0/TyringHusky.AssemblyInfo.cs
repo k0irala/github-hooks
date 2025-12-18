@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TyringHusky")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcc35398b7833a722289975203ccffa7d78f56f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TyringHusky")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TyringHusky")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

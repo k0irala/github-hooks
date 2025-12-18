@@ -7,6 +7,6 @@ public class BasicController : ControllerBase
 {
     public IActionResult GetHealth()
     {
-        return Ok("Good");
+        return Ok("Good")
     }
 }
