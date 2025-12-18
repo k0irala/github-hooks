@@ -1,7 +1,7 @@
 {
   "$schema": "https://alirezanet.github.io/Husky.Net/schema.json",
   "tasks": [
-    {
+     {
       "name": "welcome-message-example",
       "command": "bash",
       "args": ["-c", "echo Husky.Net is awesome!"],
@@ -11,11 +11,25 @@
       }
     },
     {
+      "name": "backend-restore",
+      "group": "pre-push",
+      "command": "dotnet",
+      "args": ["restore"],
+      "cwd": "./TryingHusky"
+    },
+    {
       "name": "backend-build",
       "group": "pre-push",
       "command": "dotnet",
-      "args": ["build"],
-      "cwd":"./TryingHusky"
+      "args": ["build", "--no-restore"],
+      "cwd": "./TryingHusky"
+    },
+    {
+      "name": "backend-test",
+      "group": "pre-push",
+      "command": "dotnet",
+      "args": ["test", "--no-build"],
+      "cwd": "./TryingHusky"
     }
   ]
 }
