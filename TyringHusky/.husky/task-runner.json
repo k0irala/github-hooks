@@ -14,7 +14,8 @@
       "name": "backend-build",
       "group": "pre-push",
       "command": "dotnet",
-      "args": ["build"]
+      "args": ["build"],
+      "cwd":"./TryingHusky"
     }
   ]
 }
