@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NET_PROJECT\\backend\\TyringHusky\\TyringHusky\\TyringHusky.csproj": {}
+    "D:\\NET_PROJECT\\Commerce\\TyringHusky\\TyringHusky\\TyringHusky.csproj": {}
   },
   "projects": {
-    "D:\\NET_PROJECT\\backend\\TyringHusky\\TyringHusky\\TyringHusky.csproj": {
+    "D:\\NET_PROJECT\\Commerce\\TyringHusky\\TyringHusky\\TyringHusky.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NET_PROJECT\\backend\\TyringHusky\\TyringHusky\\TyringHusky.csproj",
+        "projectUniqueName": "D:\\NET_PROJECT\\Commerce\\TyringHusky\\TyringHusky\\TyringHusky.csproj",
         "projectName": "TyringHusky",
-        "projectPath": "D:\\NET_PROJECT\\backend\\TyringHusky\\TyringHusky\\TyringHusky.csproj",
+        "projectPath": "D:\\NET_PROJECT\\Commerce\\TyringHusky\\TyringHusky\\TyringHusky.csproj",
         "packagesPath": "C:\\Users\\saura\\.nuget\\packages\\",
-        "outputPath": "D:\\NET_PROJECT\\backend\\TyringHusky\\TyringHusky\\obj\\",
+        "outputPath": "D:\\NET_PROJECT\\Commerce\\TyringHusky\\TyringHusky\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
