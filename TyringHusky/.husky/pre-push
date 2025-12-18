@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run tasks in this folder only
+dotnet husky run --path "$(dirname "$0")" --group pre-push

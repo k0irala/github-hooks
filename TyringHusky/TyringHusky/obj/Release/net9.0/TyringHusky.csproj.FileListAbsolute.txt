@@ -1,0 +1,8 @@
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.csproj.AssemblyReference.cache
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.AssemblyInfoInputs.cache
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.AssemblyInfo.cs
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.csproj.CoreCompileInputs.cache
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.MvcApplicationPartsAssemblyInfo.cs
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.MvcApplicationPartsAssemblyInfo.cache
+D:\NET_PROJECT\Commerce\TyringHusky\TyringHusky\obj\Release\net9.0\TyringHusky.sourcelink.json
